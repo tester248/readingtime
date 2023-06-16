@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Reading Time Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Reading Time Calculator</h1>
+    <form>
+      <div class="formcontent"> <label for="start-page">Start Page:</label> <input type="number" id="start-page"
+          required> <label for="end-page">End Page:</label> <input type="number" id="end-page" required> <label
+          for="avg-time">Average Time per Page (in minutes):</label> <input type="number" id="avg-time" required>
+        <button type="button" onclick="calculate()">Calculate</button> <button id="start-pause"
+          type="button">Start</button> <button id="reset" type="reset">Reset</button>
+      </div>
+    </form>
+    <div id="result"></div>
+    <div id="progress"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
